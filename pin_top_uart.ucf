@@ -1,0 +1,30 @@
+#    ckht  : in std_logic; -- 50Mhz
+#    rst   : in std_logic;
+#
+#    uart_rx : in std_logic;      -- baudspeed 19200 bps
+#    uart_tx : out std_logic;
+#
+#    fifo_rx_ena_rd  : in std_logic; -- yeu cau doc du lieu tu fifo
+#    fifo_rx_data_out: out std_logic_vector(7 downto 0); -- du lieu ra song song
+#    fifo_rx_empty   : out std_logic;  -- fifo bao trang thai trong
+#
+#    fifo_tx_ena_wr  : in std_logic; -- yeu cau ghi du lieu vao fifo
+#    fifo_tx_data_in : in std_logic_vector(7 downto 0);  -- du lieu vao song song
+#    fifo_tx_full    : out std_logic -- fifo bao trang thai day
+
+net "ckht" loc = p55;
+net "rst" loc = p59;
+
+net "uart_rx" loc = p93;
+net "uart_tx" loc = p94;
+net "fifo_rx_ena_rd" loc = p67;
+
+#led
+net "fifo_rx_data_out[0]" loc = p92;
+net "fifo_rx_data_out[1]" loc = p88;
+net "fifo_rx_data_out[2]" loc = p87;
+net "fifo_rx_data_out[3]" loc = p85;
+net "fifo_rx_data_out[4]" loc = p84;
+net "fifo_rx_data_out[5]" loc = p83;
+net "fifo_rx_data_out[6]" loc = p82;
+net "fifo_rx_data_out[7]" loc = p81;
