@@ -1,2 +1,2 @@
-# Đây là dự án truyền thông qua giao thức UART triển khai trên phần cứng FPGA Spt6 nhằm phục vụ nghiên cứu khoa học !
+# This is a communication project via UART protocol deployed on FPGA Spt6 hardware for scientific research!
 # Communication between FPGA and PC!
